@@ -3,10 +3,7 @@
   yum:
     package: {{ item }}
     state: installed
-    with_items:
-      - cifs-utils
-      - samba-client
-      - samba-common
+    with_items: {{ yum-packages }}
 
 - name: mount cifs share
   file:

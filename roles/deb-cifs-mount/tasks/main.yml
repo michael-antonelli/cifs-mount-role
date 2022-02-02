@@ -3,9 +3,7 @@
   apt:
     package: {{ item }}
     state: installed
-    with_items:
-      - cifs-utils
-      - smbclient
+    with_items: {{ apt-packages }}
 
 - name: mount cifs share
   file:
