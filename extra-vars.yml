@@ -1,0 +1,10 @@
+---
+host_group: 'cifs_mount_hosts'
+mount_point: '/mnt/cifs'
+share_name: 'someshare.brown.edu'
+share_username: 'testuser'
+share_password: 'testpw'
+file_mode: 0755
+dir_mode: 0755
+uid: '$UID'
+

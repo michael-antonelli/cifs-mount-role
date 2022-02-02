@@ -1,0 +1,23 @@
+---
+- name: Install dependencies
+  apt:
+    package: {{ item }}
+    state: installed
+    with_items:
+      - cifs-utils
+      - smbclient
+
+- name: mount cifs share
+  file:
+    path: {{ mount_point }}
+    state: directory
+    mode: '0755'
+
+- name: mount cifs
+  mount:
+    path: {{ mount_point }}
+    state: directory
+    src: {{ share_name }}
+    fstype: cifs
+    opts: username={{share_username}},password={{share_password}},uid={{uid}},iocharset=utf8,file_mode={{file_mode}},dir_mode={{dir_mode}},vers=3.0,mfsymlinks
+    state: mounted
