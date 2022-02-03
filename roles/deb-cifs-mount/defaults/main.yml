@@ -1,4 +1,0 @@
----
-apt-packages:
-  - cifs-utils
-  - smbclient

@@ -1,5 +1,0 @@
----
-yum-packages:
-  - cifs-utils
-  - samba-client
-  - samba-common
