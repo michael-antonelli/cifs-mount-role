@@ -1,7 +1,3 @@
 ---
 hosts: "{{ host_group }}"
-roles:
-  - role: deb-cifs-mount
-    when: ansible_facts['is_family'] == 'Debian'
-  - role: rh-cifs-mount
-    when: ansible_facts['is_family'] == 'RedHat'
+roles: role=cifs_mount
