@@ -1,7 +1,7 @@
 ---
 - hosts: "{{ host_group }}"
   vars_files:
-    - secrets/vault-pw.yaml
+    - secrets/vault.yaml
   roles: 
     - role: cifs_mount
       share_password: "{{ vault_share_password }}"
