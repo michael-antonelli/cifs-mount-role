@@ -5,3 +5,5 @@
   roles: 
     - role: cifs_mount
       share_password: "{{ vault_share_password }}"
+      share_username: "{{ vault_share_username }}"
+      uid: "{{ vault_uid }}"

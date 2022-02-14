@@ -1,9 +1,9 @@
 ---
-apt-packages:
+apt_packages:
   - cifs-utils
   - smbclient
 
-yum-packages:
+yum_packages:
   - cifs-utils
   - samba-client
   - samba-common
