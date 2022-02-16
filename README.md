@@ -7,7 +7,7 @@ Add secrets to the plaintext file `secrets/vault.yml` and then exncrypt that fil
 
 - `vault_share_username: ''` - The user with permission to mount the share
 
-- `vault_uid: ''` - UID for the user sepcified above
+- `vault_uid: ''` - UID for the user specified above
 
 Once this file has had the variable definitions added run `$ ansible-vault encrypt secrets/vault.yml` and select a password. This password will by typed when `playbook.yml` is run, or it can be placed in a credential file and passed to the `ansible-playbook` command with the `--vault-password-file` option. See [Ansible's Documentation](https://docs.ansible.com/ansible/latest/user_guide/vault.html#passing-a-single-password) for more details.
 
