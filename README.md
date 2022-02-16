@@ -11,7 +11,7 @@ Add secrets to the plaintext file `secrets/vault.yml` and then exncrypt that fil
 
 Once this file has had the variable definitions added run `$ ansible-vault encrypt secrets/vault.yml` and select a password. This password will by typed when `playbook.yml` is run, or it can be placed in a credential file and passed to the `ansible-playbook` command with the `--vault-password-file` option. See [Ansible's Documentation](https://docs.ansible.com/ansible/latest/user_guide/vault.html#passing-a-single-password) for more details.
 
-**THE MOUNT COMMAND IS RUN WITH THE `no_log` OPTION SO IT WILL NOT PRINT SECRETS TO LOGS. IF YOU RUN THIS PLAYBOOK IN DEBUG MODE WITH THE `-vvv` FLAG THAT OPTION IS IGNORED AND SECRETS WILL BE PRINTED IN PLAINTEXT TO LOGS AND DEBUG OUTPUT. NEVER RUN THIS PLAY IN DEBUG MODE ON PRODUCTION WITH YOUR SECRETS!**
+**THE MOUNT MODULE IS RUN WITH THE `no_log` OPTION SO IT WILL NOT PRINT SECRETS TO LOGS. IF YOU RUN THIS PLAYBOOK IN DEBUG MODE WITH THE `-vvv` FLAG THAT OPTION IS IGNORED AND SECRETS WILL BE PRINTED IN PLAINTEXT TO LOGS AND DEBUG OUTPUT. NEVER RUN THIS PLAY IN DEBUG MODE ON PRODUCTION WITH YOUR SECRETS!**
 
 ### Variables
 Variables to set in `extra-vars.yml` before running:
