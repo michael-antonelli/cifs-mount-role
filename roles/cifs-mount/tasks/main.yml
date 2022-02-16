@@ -24,3 +24,4 @@
     fstype: cifs
     opts: username={{share_username}},password={{share_password}},uid={{uid}},iocharset=utf8,file_mode={{file_mode}},dir_mode={{dir_mode}},vers=3.0,mfsymlinks
     state: mounted
+  no_log: true

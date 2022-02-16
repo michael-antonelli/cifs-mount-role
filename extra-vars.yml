@@ -1,7 +1,7 @@
 ---
 host_group: 'cifs_mount_hosts'
 mount_point: '/mnt/ans-mnt/'
-share_name: 'files.brown.edu'
+share_name: '//files.brown.edu/dfs'
 file_mode: 0755
 dir_mode: 0755
 
