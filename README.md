@@ -1,7 +1,7 @@
 # cifs-mount-role
 This repository contains an ansible role for mounting remote CIFS shares on RedHat and Debian distros.
 
-### Hosts
+## Hosts
 Add the hosts you want to run this on to `hosts`. The default heading is `cif_mount_role`.
 
 e.g.
@@ -10,7 +10,7 @@ e.g.
 servername.domain
 ```
 
-### Secrets
+## Secrets
 Add secrets to the plaintext file `secrets/vault.yml` and then exncrypt that file using `ansible-vault`:
 - `vault_share_password: ''` - The user's password
 
@@ -22,7 +22,7 @@ Once this file has had the variable definitions added run `$ ansible-vault encry
 
 **THE MOUNT MODULE IS RUN WITH THE `no_log` OPTION SO IT WILL NOT PRINT SECRETS TO LOGS. IF YOU RUN THIS PLAYBOOK IN DEBUG MODE WITH THE `-vvv` FLAG THAT OPTION IS IGNORED AND SECRETS WILL BE PRINTED IN PLAINTEXT TO LOGS AND DEBUG OUTPUT. NEVER RUN THIS PLAY IN DEBUG MODE ON PRODUCTION WITH YOUR SECRETS!**
 
-### Variables
+## Variables
 Variables to set in `extra-vars.yml` before running:
 - `host_group: ''` - just the name of the square-bracketed host group in the `hosts` file you wish to work on
 
@@ -35,7 +35,7 @@ Variables to set in `extra-vars.yml` before running:
 - `dir_mode: ''` - octal directory posix permission eg. 0755
 
 
-### Run
+## Run
 Example ansible cli command:
 
 `$ ansible-playbook -i hosts --extra-var '@extra-vars.yml' playbook.yml --ask-vault-pass`
