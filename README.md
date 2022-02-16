@@ -5,9 +5,9 @@ This repository contains an ansible role for mounting remote CIFS shares on RedH
 Add the hosts you want to run this on to `hosts`. The default heading is `cif_mount_role`.
 
 e.g.
-`[cifs_mount_role]
+```[cifs_mount_role]
 servername.domain
-`
+```
 
 ### Secrets
 Add secrets to the plaintext file `secrets/vault.yml` and then exncrypt that file using `ansible-vault`:
