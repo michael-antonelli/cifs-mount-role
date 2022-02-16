@@ -6,7 +6,7 @@ Add the hosts you want to run this on to `hosts`. The default heading is `cif_mo
 
 e.g.
 ```
-[cifs_mount_role]
+[cifs_mount_hosts]
 servername.domain
 ```
 
