@@ -1,5 +1,5 @@
 ---
-host_group: ''
+host_group: 'cifs_mount_hosts'
 mount_point: ''
 share_name: ''
 file_mode: ''
