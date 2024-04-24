@@ -11,7 +11,7 @@ servername.domain
 ```
 
 ## Secrets
-Add secrets to the plaintext file `secrets/vault.yml` and then exncrypt that file using `ansible-vault`:
+Add secrets to the plaintext file `secrets/vault.yml` and then encrypt that file using `ansible-vault`:
 - `vault_share_password: ''` - The user's password
 
 - `vault_share_username: ''` - The user with permission to mount the share
