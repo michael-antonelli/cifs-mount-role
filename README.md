@@ -2,7 +2,7 @@
 This repository contains an ansible role for mounting remote CIFS shares on RedHat and Debian distros.
 
 ## Hosts
-Add the hosts you want to run this on to `hosts`. The default heading is `cif_mount_role`.
+Add the hosts you want to run this on to `hosts`. The default heading is `cifs_mount_role`.
 
 e.g.
 ```
